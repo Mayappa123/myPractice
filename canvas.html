@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Tutorial</title><style type="text/css">
+
+    </style>
+</head>
+<body>
+    <canvas id="maya" height="200px" width="400px" style="border:
+    10px double #ff0000"></canvas>
+
+    <script type="text/javascript">
+        var c = document.getElementById("maya");
+        var c1 = c.getContext("2d");
+        c1.moveTo(0, 0);
+        c1.lineTo(400, 200);
+        c1.stroke();
+        
+        var c2 = document.getElementById("maya");
+        var ctx = c2.getContext("2d");
+        ctx.arc(95, 50, 40, 0, 2*Math.PI);
+        ctx.stroke();
+        
+    </script>
+    
+</body>
+</html>

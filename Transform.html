@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Transform</title>
+    <style>
+        .container{
+            margin-top: 100px;
+        }
+        .item{
+            background-color: lightgray;
+            margin: 20px auto;
+            height: 70px;
+            width: 300px;
+            border: 1px solid black;
+            
+        }
+        .one:hover{
+            transform: rotate(-45deg);
+        }
+        .two:hover{
+            transform: scale(2, 0.8);
+        }
+        .three:hover{
+            transform: translate(300px, -100px);
+        }
+        .four:hover{
+            transform: skew(-30deg);
+        }
+        .five:hover{
+            box-shadow: 1px 1px 20px rgb(47, 0, 255);
+        }
+    </style>
+</head>
+<body> <h1>Transform property</h1>
+    <div class="container">
+        <div class="item one">transform: rotate(-45deg);
+        </div>
+        <div class="item two">transform: scale(2, 0.8);</div>
+        <div class="item three">transform: translate(300px, -100px);</div>
+        <div class="item four">transform: skew(-30deg);</div>
+        <div class="item five">box-shadow: 1px 1px 20px rgb(47, 0, 255);</div>
+    </div>
+</body>
+</html>

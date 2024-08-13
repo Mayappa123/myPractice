@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style type="text/css">
+
+form{
+background: linear-gradient(
+    to left,
+    red,
+    rgb(255, 95, 95),
+    rgb(255, 224, 222)
+);  
+}
+
+input{
+    color: red;
+}
+ol{
+    color: red;
+}
+ul{
+    color: blue;
+}
+u{
+    color: rgb(46, 9, 255);
+}
+ #five{
+    height: 500px;
+    width: 500px;
+background-image: repeating-conic-gradient( red 10%, yellow 15%,blue  );
+border-radius: 15px ;
+background-attachment: fixed;
+background-size: cover;
+}
+
+table{
+    border-style: ridge;
+    border-color: black;
+    border-width: 1.5mm;
+position: absolute;
+text-align: center;
+bottom: 0px;  
+right: 0px;
+height: 40mm;
+vertical-align: top;}
+
+td:first-child{
+    line-height: 8mm;
+    border-style: ridge;
+    border-color: rgb(255, 0, 0);
+    border-width: 1.5mm;
+}
+td:nth-child(2){
+    line-height: 8mm;
+    border-style: ridge;
+    border-color: yellow;
+    border-width: 1.5mm;
+
+}
+td:last-child{
+    line-height: 8mm;
+    border-style: ridge;
+    border-color: rgb(0, 0, 255);
+    border-width: 1.5mm;
+
+}
+#dia {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 255);
+    transform: rotate(45deg);
+    margin: 50px; /* Location Adjustment */
+}
+.b1{
+    border-style: ridge;
+    border-width: 1.5mm;
+    border-color: red;
+;}
+#circle{
+    height: 10mm;
+}
+#ten{
+   height: 7mm;
+   width: 22mm;
+   background-color: yellowgreen;
+}
+#nine{
+list-style-type: circle;  margin: 0px;
+    padding: 0px;
+    width: 200px;
+    background-color: rgb(218, 218, 218);
+}
+li a{
+    display: block;
+    color: red;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+li a:hover{
+background-color: rgb(255, 248, 124);
+
+}
+#ten{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    display: inline;
+}
+#ttt a{
+    display: inline;
+}
+
+    </style>
+</head>
+<body>
+    <form  >
+        <fieldset><legend><b><u> personal Information </u></b></legend>
+Enter your firstname : <input type="text"  ><br><br>
+Enter your Lastname : <input type="text"  ><br><br>
+Gender : <input type="radio" value="" checked> male &nbsp;
+<input type="radio" value=""> female <br><br>
+<input type="submit" value="Submit" id="ten">&nbsp;&nbsp;&nbsp; <input type="button" value="Edit">
+        </fieldset>
+        <br><br>
+        <div class="container">
+            <input type="checkbox" >
+        </div>
+</form>
+    <br><hr><br>
+    <section></section><ol>
+        <li>Maharashtra
+          
+            <ul>
+               <li >Solapur</li>
+               <li>Pune</li>
+               <li>Raigad</li>
+
+            </ul>
+        </li>
+        <br>
+        <li>Karnataka
+            <ul>
+                <li>Vijaypur</li>
+                <li>Raichur</li>
+                <li>Bidar</li>
+            </ul>
+        </li><br>
+        <li>Bihar
+            <ul>
+                <li>Patna</li>
+                <li>katihar</li>
+                <li>Samastipur</li>
+            </ul>
+        </li>
+    </ol></section>
+    <table style="width: 75mm" >
+        <tr id="one">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr id="two">
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr id="three">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <div id="dia"></div>
+    <img src="https://gridbyexample.com/examples/images/example2.png " alt="Grid" height="180mm" width="300mm"><br><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_YQLKXnsB8W0TUjtjisEPPUd5KKIIhEWfg&usqp=CAU " alt="Grid" height="180mm" width="300mm">
+<br><br>
+    <div id="five"></div>
+    <ul id="nine">
+        <li><a href="#"> Home</a></li>
+        <li><a href="#"> News</a></li>
+        <li><a href="#"> ontact</a></li>
+        <li><a href="#"> About</a></li>
+    </ul >
+    <br><br><br>
+    <ul id="ten">
+        <li id="ttt"><a href="#"> Home</a></li>
+        <li id="ttt"><a href="#"> News</a></li>
+        <li id="ttt"><a href="#"> ontact</a></li>
+        <li id="ttt"><a href="#"> About</a></li>
+    </ul >
+</body>
+</html>

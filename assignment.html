@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asignment</title>
+</head>
+<body>
+    <script type="text/javascript">
+       
+       var books = [];
+        input = number(prompt("Enter 1 to add.. Enter 2 to display...Enter 3 to exit....Enter 4 to remove"))
+    while ( input != 3)
+    {
+        if (input == 1){
+            var newbook = prompt("enter the name of the book")
+            books.push(newBook)
+        }
+        else if( input == 2){
+            alert("available books are "+books)
+        }
+else if(input == 4){
+            var x = books.pop()
+            alert("removed books is" +x)
+        }
+else{
+            alert ("Invalid option")
+        }
+         input = number(prompt("Enter 1 to add.. Enter 2 to display...Enter 3 to exit....Enter 4 to remove"))
+
+    }
+    alert ("thank you")
+    
+    
+    </script>
+</body>
+</html>

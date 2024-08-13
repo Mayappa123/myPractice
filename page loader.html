@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Page Loader</title>
+      <style>
+          h1 {
+            text-align: center;
+          }
+          
+          .ring2 {
+            border: 20px solid rgb(211, 211, 211);
+            position: absolute;
+            left: 55%;
+            border-radius: 50%;
+            border-top: 20px solid red; /* red */
+            border-bottom: 20px solid blue; /* blue */
+            border-right: 20px solid yellow; /* yellow */
+            border-left:20px solid green; /* green */
+            width: 120px;
+            height: 120px;
+            animation: spin 1s linear infinite;
+          }
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+      </style>
+   </head>
+   <body>
+      <h1>Please wait...</h1>
+      <div class="ring2"> </div>
+   </body>
+</html>

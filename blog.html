@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .post-image {
+        height: 300px;
+        width: 600px;
+        display: none;
+      }
+      .blogPost {
+        margin-top: 20px;
+        height: 600px;
+        width: 85vw;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="blogPostContainer"></div>
+
+    <script>
+      const data = {
+        name: "Tony Stark",
+        date: "05-06-2023",
+        title: "Iron Man: The Journey of a Genius",
+        image:
+          "https://plus.unsplash.com/premium_photo-1679334171547-b29c4d81a6b3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        content:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor justo id lectus eleifend, non feugiat ex malesuada. Proin interdum sollicitudin nulla, vitae bibendum elit aliquet nec. Vivamus auctor justo at tristique lobortis. Nullam tincidunt sapien ut dui sollicitudin, in egestas risus semper. Nulla consequat eros non sem vehicula, eget rhoncus leo tristique.",
+      };
+
+      // Create blog post HTML
+      const blogPostHtml = `
+      <div class='blogPost'>
+        <header>
+      <h1 class="blog-title">${data.title}</h1>
+      <h3>${data.name}</h3>
+      <p class="date">Posted on ${data.date}</p>
+    </header>
+    <article class="post">
+      <img src="${data.image}" alt="Post Image" class="post-image">
+      <div class="post-content">
+        <p>${data.content}</p>
+      </div>
+    </article></div>
+    
+  `;
+
+      // Insert blog post HTML into container
+      const blogPostContainer = document.getElementById("blogPostContainer");
+      blogPostContainer.innerHTML = blogPostHtml;
+    </script>
+  </body>
+</html>

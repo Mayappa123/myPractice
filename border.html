@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style
+        type="text/css">
+        #one{ 
+            color: red;
+            background-color: lemonchiffon;
+            border-color: blue;
+            border-width: 3mm;
+            border-style: solid;
+        }
+        #two{ 
+            color: rgb(240, 0, 240);
+            background-color: rgb(253, 236, 236);
+            border-color: deeppink;
+            border-width: 1.5mm;
+            border-style: dotted;
+            outline-style: dotted;
+            outline-width: 1.5mm;
+            outline-color: deeppink;
+        }
+        #three{ 
+            color: blue;
+            background-color: rgb(248, 226, 242);
+            border-color: magenta;
+            border-style: ridge;
+            border-width: 5mm;
+        }
+        #four{ 
+            color: forestgreen;
+            background-color: rgb(227, 246, 253);
+            border-radius: 8mm;
+            border-top-right-radius: 16mm;
+            border-bottom-right-radius: 16mm;
+            border-top: 3mm;
+            border-bottom: 3mm;
+            border-color: rgb(124, 137, 255);
+            border-style: double;
+            outline-offset: 2mm;
+            outline-color: red;
+            outline-width: 1mm;
+            outline-style: dotted;
+
+        }
+        #five{
+            position: relative;
+            width: 300px;
+            height: 200px;
+        }
+        #five::after{
+             content: "";
+             position: absolute;
+             top: 0;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             border-radius: 10px;
+             padding: 5px;
+             background: linear-gradient(90deg, #cae9ff, #f4dca0);
+             -webkit-box-align:
+             linear-gradient(#fff 0 0) content-box,
+             linear-gradient(#fff 0 0);
+             -webkit-mask-composite: xor;
+             mask-composite: exclude;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 id="one"><q>There is no substitute for hardwork.</q> </h1><br>
+
+   <h1 id="two"><q>I find that the <br> 
+        harder I work,<br> the more luck 
+        <br> I seem to have.</q></h1>
+    
+    <h1 id="three"><q>You were born to win.<br> 
+        But tobe a winner,<br> 
+        you must plan to win,<br>
+        prepare to win and <br>
+        expect to win.</q></h1>
+    
+    <h1 id="four"><q>Never give up,<br>
+        for that is just the <br>
+         place and time that <br>
+         the tide will turn.</q> </h1>
+
+         <h1 id="five"><q>You never will be <br>
+         the person you can be <br>
+         if pressure. Tension and <br>
+         discipline are taken out <br>
+         of your life.</q></h1>
+
+
+
+    </center>
+</body>
+</html>
